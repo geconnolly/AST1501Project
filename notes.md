@@ -10,6 +10,7 @@
         - ymin: 187.5 mm
         - ymax: 190.637 mm
   - $d$ is 375 mm or .375 m (distance from x ymax to x1 ymin - should this be from the middle of the petals?)
+  
  - Plots of Antenna Gain across Theta and Phi
 
 ![image](https://github.com/user-attachments/assets/b74c52bd-02cb-4ac1-90a0-07322be7a26f)
@@ -18,6 +19,29 @@
 - Equations
 
 $Ae^{i(\phi + 2\pi*{dsin(\theta)/\lambda})}$
+
+- Phase Shift Plots
+  - Phase Shift determined by above equation ($2\pi*{dsin(\theta)/\lambda}$) added to $\phi$ value
+  - Combined plot is the average of theta, phase + phi, and gain values
+
+![image](https://github.com/user-attachments/assets/c1fface0-8d20-4d56-9fdc-99c87b1bb477)
+![image](https://github.com/user-attachments/assets/b78733d6-0229-4b17-be7c-c3d861b09ccc)
+![image](https://github.com/user-attachments/assets/c4486d5c-0273-423d-9f8c-aa95833e1927)
+
+- Export from CST
+  - Theta [deg]
+  - Phi [deg]
+  - Abs(Dir.) [dBi] or Gain
+  - Abs(Theta)[dBi]
+  - Phase(Theta)[deg]
+  - Abs(Phi)[dBi]
+  - Phase(Phi)[deg]
+  - Ax.Ratio[dB]
+
+- [Directivity vs. Gain](https://space.mit.edu/RADIO/CST_online/mergedProjects/3D/special_postpr/special_postpr_pp_farfield.htm)
+  - The directivity of an antenna is defined as "the ratio of the radiation intensity in a given direction from the antenna to the radiation intensity averaged over all directions." The averaged radiation intensity is given by the total power radiated by the antenna divided by 4π
+  - Accordingly, the gain is defined similarly but is related to the accepted power of the structure. In the case of a loss-free antenna (no conduction or dielectric losses), the gain is equal to the directivity. Note, that power flowing out any port is not considered as accepted by the structure.
+- Circular-Directional Polarization/Ludwig 3
 
 ## Week of 11/25/2024
 - [Project Proposal Presentation](https://github.com/user-attachments/files/17981823/Connolly_December_Presentation.pdf)
