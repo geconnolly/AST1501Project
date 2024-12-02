@@ -15,6 +15,10 @@
 ![image](https://github.com/user-attachments/assets/b74c52bd-02cb-4ac1-90a0-07322be7a26f)
 ![image](https://github.com/user-attachments/assets/7684f479-37d0-4827-becd-22ffd15b2f6f)
 
+- Equations
+
+$Ae^{i(\phi + 2\pi*{dsin(\theta)/\lambda})}$
+
 ## Week of 11/25/2024
 - [Project Proposal Presentation](https://github.com/user-attachments/files/17981823/Connolly_December_Presentation.pdf)
 - Code from Keith (for plotting with HealPy/HealPix)
