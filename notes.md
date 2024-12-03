@@ -1,6 +1,11 @@
 # Research and Meeting Notes
 
-## Week of 12/2/2024
+## Week of 12/3/2024
+- Meeting Notes
+
+![20241203_115130](https://github.com/user-attachments/assets/10fce7d9-d7e5-4eed-88bf-ffe25418b3b8)
+
+## Week of 11/26/2024
 - Adding [1] and [17] Antennas together
   - [1] and [17] share X and Z coordinates but vary by Y
       - petal x ([1]):
@@ -43,7 +48,7 @@ $Ae^{i(\phi + 2\pi*{dsin(\theta)/\lambda})}$
   - Accordingly, the gain is defined similarly but is related to the accepted power of the structure. In the case of a loss-free antenna (no conduction or dielectric losses), the gain is equal to the directivity. Note, that power flowing out any port is not considered as accepted by the structure.
 - Circular-Directional Polarization/Ludwig 3
 
-## Week of 11/25/2024
+## Week of 11/19/2024
 - [Project Proposal Presentation](https://github.com/user-attachments/files/17981823/Connolly_December_Presentation.pdf)
 - Code from Keith (for plotting with HealPy/HealPix)
 ```
