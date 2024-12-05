@@ -1,6 +1,19 @@
 # Research and Meeting Notes
 
 ## Week of 12/3/2024
+- dBi
+  - $Gain$ (Linear) $= 10^{Gain(dBi)/10}$
+  - $P_{dBi} = 10*log_{10}P$
+ 
+- Converting to Linear
+  - Convert dBi to Linear units (Watts?)
+  - Abs(Phi)[dBi] + Abs(Theta)[dBi] should = Abs(Dir.)[dBi] when converted to linear
+    - True, ±.00004
+   
+- Equations
+  - $A_i = \sqrt{D_i} * e^{j(\Phi + \Phi_i)}$
+  - where $D_i = |A_i|^2$ and $D_{tot} = |A_1 + A_2 + ... A_i|^2$
+    - $D_i$ holds true for $A_1$ and $A_{17}$ but not $D_{tot}$
 - Meeting Notes
 
 ![20241203_115130](https://github.com/user-attachments/assets/10fce7d9-d7e5-4eed-88bf-ffe25418b3b8)
