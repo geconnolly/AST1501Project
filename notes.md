@@ -1,6 +1,17 @@
 # Research and Meeting Notes
 
 ## Week of 12/3/2024
+
+- Plots
+  - [1] and [17] Plots - linerized Gain to give Amplitude of Power (Volts)
+
+![download](https://github.com/user-attachments/assets/ee74f693-199b-47e9-9c5b-90f912743477)
+![download](https://github.com/user-attachments/assets/9e7b27b1-c518-4b25-a87a-27357fd16ec6)
+
+  - $D_{1+17} = |A_1 + A_{17}|^2$
+
+![download](https://github.com/user-attachments/assets/cd402c23-81f4-45d0-b3a0-2a9f5fdff87d)
+
 - dBi
   - $Gain$ (Linear) $= 10^{Gain(dBi)/10}$
   - $P_{dBi} = 10*log_{10}P$
@@ -12,8 +23,11 @@
    
 - Equations
   - $A_i = \sqrt{D_i} * e^{j(\Phi + \Phi_i)}$
-  - where $D_i = |A_i|^2$ and $D_{tot} = |A_1 + A_2 + ... A_i|^2$
-    - $D_i$ holds true for $A_1$ and $A_{17}$ but not $D_{tot}$
+  - where $D_i = |A_i|^2$ and $D_{i+j} = |A_i + A_j|^2$
+    - ~~D_i holds true for A_1 and A_{17} but not D_{tot}~~
+    - ~~D_1 + D_{17} = |A_1|^2 + |A_{17}|^2~~
+    - $D_{tot} \neq D_i + D_j$ !!!
+  - $D_i = R(A_i)^2 + I(A_i)^2$
 - Meeting Notes
 
 ![20241203_115130](https://github.com/user-attachments/assets/10fce7d9-d7e5-4eed-88bf-ffe25418b3b8)
