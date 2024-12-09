@@ -3,21 +3,29 @@
 ## Week of 12/3/2024
 
 - Plots
-  - [1] and [17] Plots - linerized Gain to give Amplitude of Power (Volts)
+  - [1] and [17] Plots - Gain (Linear) and Amplitude
 
-![download](https://github.com/user-attachments/assets/ee74f693-199b-47e9-9c5b-90f912743477)
-![download](https://github.com/user-attachments/assets/9e7b27b1-c518-4b25-a87a-27357fd16ec6)
+![download](https://github.com/user-attachments/assets/5f222d05-d28e-4f37-98d9-07e40dfc6284)
+![download](https://github.com/user-attachments/assets/63584d4d-3c81-42fe-a5a4-af05aaba5017)
+![download](https://github.com/user-attachments/assets/d386b441-3f66-4f74-81db-bf75405350fc)
+![download](https://github.com/user-attachments/assets/fcc106eb-bf6a-4ae2-bb14-852e878aeab3)
 
   - $D_{1+17} = |A_1 + A_{17}|^2$
 
-![download](https://github.com/user-attachments/assets/cd402c23-81f4-45d0-b3a0-2a9f5fdff87d)
+![download](https://github.com/user-attachments/assets/f056e51e-3757-4f6f-91d6-65d989fd208c)
+
+  - $\sqrt{D_{1+17}}$
+
+![download](https://github.com/user-attachments/assets/00503dd3-e49b-4139-b16d-96550c8f854f)
+
 
 - dBi
-  - $Gain$ (Linear) $= 10^{Gain(dBi)/10}$
-  - $P_{dBi} = 10*log_{10}P$
+  - $Gain$ $= 10^{Gain(dBi)/10}$
+  - $G_{dBi} = 10*log_{10}G$
+  - $G = {P_{antenna}/P_{isotropic}}$
  
 - Converting to Linear
-  - Convert dBi to Linear units (Watts?)
+  - Convert dBi to Linear (unitless?)
   - Abs(Phi)[dBi] + Abs(Theta)[dBi] should = Abs(Dir.)[dBi] when converted to linear
     - True, ±.00004
    
@@ -28,6 +36,8 @@
     - ~~D_1 + D_{17} = |A_1|^2 + |A_{17}|^2~~
     - $D_{tot} \neq D_i + D_j$ !!!
   - $D_i = R(A_i)^2 + I(A_i)^2$
+    - Holds true for data
+  - $D \propto |A|^2 \propto |E|^2$
 - Meeting Notes
 
 ![20241203_115130](https://github.com/user-attachments/assets/10fce7d9-d7e5-4eed-88bf-ffe25418b3b8)
