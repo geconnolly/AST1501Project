@@ -1,5 +1,26 @@
 # Research and Meeting Notes
 
+## Week of 12/10/2024
+
+- Worked on LitQual most of this week, not many updates
+- Phase: Phi and Theta relative to polarization
+  - One much bigger, means its alligned to the feed
+- Coordinate System
+
+![CoordinateSystems](https://github.com/user-attachments/assets/fc9a76d0-b9eb-45b6-8cc5-e1415ea9023c)
+
+- Rotating Coordinates
+  - [Rotating Tutorial](https://www.zonca.dev/posts/2021-03-11-rotate-maps-healpy)
+  - "The definition of rotation in healpy is that the point provided in `rot` will be the center of the map."
+  - `hp.Rotator`?
+ 
+- Next Steps:
+  - Figure out how to rotate coordinates
+  - Look in Phase and Amplitude Space
+  - Adding More Feeds
+    - Mirror Flip: theta to -theta i.e., in ang2pix
+    - Phi phase shift $dsin{\theta}$ don't care about x,y angle, only z angle $(cz/\nu)sin{\theta}$
+
 ## Week of 12/3/2024
 
 - Plots
