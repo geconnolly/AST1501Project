@@ -74,6 +74,9 @@ hp.mollview(rot_hpmap, unit ="Amplitude", title="0.3 GHz: [1] & [17]")
 ```
 ![download](https://github.com/user-attachments/assets/6e2d21f5-e240-4ed5-b868-e15b9aac09e0)
 
+- `flip` in `hp.mollview`
+  - "Defines the convention of projection : ‘astro’ (default, east towards left, west towards right) or ‘geo’ (east towards right, west towards left)"
+
 ## Week of 12/10/2024
 
 - Worked on LitQual most of this week, not many updates
