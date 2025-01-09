@@ -85,6 +85,7 @@ hp.mollview(rot_hpmap, unit ="Amplitude", title="0.3 GHz: [1] & [17]")
 - Coordinate System
 
 ![CoordinateSystems](https://github.com/user-attachments/assets/fc9a76d0-b9eb-45b6-8cc5-e1415ea9023c)
+![image](https://github.com/user-attachments/assets/0f0b16f9-53f2-48d5-bcc5-96555dc9503a)
 
 - Rotating Coordinates
   - [Rotating Tutorial](https://www.zonca.dev/posts/2021-03-11-rotate-maps-healpy)
