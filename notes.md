@@ -1,5 +1,79 @@
 # Research and Meeting Notes
 
+## Week of 1/7/2025
+
+- Rotator Code
+  - Why are we rotating: easier to view plots with respect to feeds
+  - rot = (a,b,c): euler angles
+  - Third Euler angle is around the center of the map
+  - takes `orig_hpmap` and outputs rotated version  `rot_hpmap`
+```
+import healpy as hp
+rot = hp.rotator.Rotator(rot=(0,0,90))
+rot_hpmap = rot.rotate_map_pixel(orig_hpmap)
+hp.mollview(orig_hpmap)
+hp.mollview(rot_hpmap)
+```
+![download](https://github.com/user-attachments/assets/c134005d-f864-418e-b373-9556d4e80503)
+![download](https://github.com/user-attachments/assets/6319fbd6-ae6b-4d1a-ae20-54dfaa797d47)
+![download](https://github.com/user-attachments/assets/874ce438-c54c-40f8-8b1a-4d8ec5f9ec4a)
+![download](https://github.com/user-attachments/assets/167f0157-a2d8-48fb-a500-250c27611097)
+
+- Updated Plot Code
+```
+#healpy map set up
+nside=64
+npix = hp.nside2npix(nside)
+hpmap = np.zeros(npix)
+
+#map with pixels matching theta and phi angles from data
+pidx = hp.ang2pix(nside, data['theta'], data['phi'])
+
+#linearizing gain - data is given in dBi
+linear_gain = 10**(data['gain']/10)
+
+#creating map with gain data
+hpmap[pidx]=np.sqrt(linear_gain)
+
+#rotating map around the center
+rot = hp.rotator.Rotator(rot=(0,0,90))
+orig_hpmap = hpmap
+rot_hpmap = rot.rotate_map_pixel(orig_hpmap)
+
+hp.mollview(rot_hpmap, unit =r'Amplitude', title="0.3 GHz: [1]")
+
+```
+![download](https://github.com/user-attachments/assets/a890d521-9167-4989-a236-ac3077f11ba6)
+![download](https://github.com/user-attachments/assets/ee440f3b-ac5d-4cc3-ba88-2dd7d22ff43c)
+
+- "Adding" Together [1] and [17] (is this right?)
+```
+# equations
+G_1 = 10**(data['abs(theta)']/10)
+A_1 = np.sqrt(G_1)*np.exp(1j*(data['phase(theta)']))
+
+G_17 = 10**(data1['abs(theta)']/10)
+A_17 = np.sqrt(G_17)*np.exp(1j*(data1['phase(theta)']))
+
+A_tot = A_1 + A_17
+D_tot = np.abs(A_tot)**2
+
+# plot
+nside=64
+npix = hp.nside2npix(nside)
+hpmap = np.zeros(npix)
+
+pidx = hp.ang2pix(nside, data['theta'], data['phi'])
+hpmap[pidx]=(D_tot)
+
+rot = hp.rotator.Rotator(rot=(0,0,90))
+orig_hpmap = hpmap
+rot_hpmap = rot.rotate_map_pixel(orig_hpmap)
+
+hp.mollview(rot_hpmap, unit ="Amplitude", title="0.3 GHz: [1] & [17]")
+```
+![download](https://github.com/user-attachments/assets/6e2d21f5-e240-4ed5-b868-e15b9aac09e0)
+
 ## Week of 12/10/2024
 
 - Worked on LitQual most of this week, not many updates
