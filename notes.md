@@ -2,6 +2,10 @@
 
 ## Week of 1/7/2025
 
+- Meeting Notes
+  - Renaming `Phase[theta]` to $\alpha$ and `Phase[phi]` to $\beta$
+  - `flip='astro'` is fine (default) - "gods eye view"
+
 - Rotator Code
   - Why are we rotating: easier to view plots with respect to feeds
   - rot = (a,b,c): euler angles
@@ -46,7 +50,8 @@ hp.mollview(rot_hpmap, unit =r'Amplitude', title="0.3 GHz: [1]")
 ![download](https://github.com/user-attachments/assets/a890d521-9167-4989-a236-ac3077f11ba6)
 ![download](https://github.com/user-attachments/assets/ee440f3b-ac5d-4cc3-ba88-2dd7d22ff43c)
 
-- "Adding" Together [1] and [17] (is this right?)
+- "Adding" Together [1] and [17] in phase
+  - Phase[theta] used instead of Phase[phi] because Abs[theta] is greater than Abs[phi]
 ```
 # equations
 G_1 = 10**(data['abs(theta)']/10)
@@ -76,6 +81,10 @@ hp.mollview(rot_hpmap, unit ="Amplitude", title="0.3 GHz: [1] & [17]")
 
 - `flip` in `hp.mollview`
   - "Defines the convention of projection : ‘astro’ (default, east towards left, west towards right) or ‘geo’ (east towards right, west towards left)"
+ 
+- Phase Plots
+![download](https://github.com/user-attachments/assets/e54b2e6d-a1d1-402e-b248-f660b1664082)
+![download](https://github.com/user-attachments/assets/bea0ee74-a6a1-4281-a6b9-b43a9bdeaaab)
 
 ## Week of 12/10/2024
 
