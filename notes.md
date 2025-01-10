@@ -3,7 +3,27 @@
 ## Week of 1/7/2025
 
 - "Mirroring" for flipping feeds
-  - theta to -theta in ang2pix does not work (-theta out of bounds [0, $\pi$])
+  - theta to -theta in ang2pix does not work (-theta out of bounds [0, $\pi$]) - but this would just be for plotting purposes?
+  - would the polarization $\alpha$ be flipped to - $\alpha$ ?
+```
+#original
+G_1 = 10**(data['abs(theta)']/10)
+A_1 = np.sqrt(G_1)*np.exp(1j*(data['alpha']))
+
+#mirrored
+G_1prime = 10**(data['abs(theta)']/10) #wouldn't change 
+A_1prime = np.sqrt(G_1prime)*np.exp(1j*(-data['alpha'])) #negative alpha
+...
+A_tot = A_1 + A_1 prime + ...
+```
+  - sanity check: do [1] and [17] plot match [1]' and [17]'?: YES
+
+![download](https://github.com/user-attachments/assets/8d6d0198-76e2-401a-9bcc-69fc9acc0e9c)
+![download](https://github.com/user-attachments/assets/2615c03c-7021-447b-99b5-ede433b86ea1)
+
+  - see peaks and nodes we would expect (all four feeds are larger than 1 m - the wavelength at .3 GHz)
+
+![download](https://github.com/user-attachments/assets/2d239514-4067-4329-af7d-3f9ac5d315ed)
 
 - Meeting Notes
   - Renaming `Phase[theta]` to $\alpha$ and `Phase[phi]` to $\beta$
