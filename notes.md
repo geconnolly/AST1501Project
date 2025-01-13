@@ -5,6 +5,9 @@
 - "Mirroring" for flipping feeds
   - theta to -theta in ang2pix does not work (-theta out of bounds [0, $\pi$]) - but this would just be for plotting purposes?
   - would the polarization $\alpha$ be flipped to - $\alpha$ ?
+ 
+![image](https://github.com/user-attachments/assets/2ae4df77-e025-4156-b61d-d4ff531faca9)
+
 ```
 #original
 G_1 = 10**(data['abs(theta)']/10)
