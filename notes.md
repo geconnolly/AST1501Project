@@ -1,11 +1,23 @@
 # Research and Meeting Notes
 
+## Week of 1/14/2025
+
+- Flipping Feeds
+  - [1]' and [17]' plot should be the mirror of [1] and [17]
+  - distance between [1] and [17]: .375 m
+  - distance between [1] and [1]': 1.125 m (greater than wavelength)
+
 ## Week of 1/7/2025
 
 - "Mirroring" for flipping feeds
-  - theta to -theta in ang2pix does not work (-theta out of bounds [0, $\pi$]) - but this would just be for plotting purposes?
-  - would the polarization $\alpha$ be flipped to - $\alpha$ ?
- 
+  - theta to -theta in ang2pix does not work (-theta out of bounds [0, $\pi$])
+  - np.pi - theta instead
+
+![image](https://github.com/user-attachments/assets/f3cd0187-a301-4e60-8c3b-2f7e15c05386)
+
+![Screenshot 2025-01-14 165507](https://github.com/user-attachments/assets/8575d0ee-fb79-4ca3-a68b-496884b8c878)
+
+ <!--
 ![image](https://github.com/user-attachments/assets/2ae4df77-e025-4156-b61d-d4ff531faca9)
 
 ```
@@ -27,6 +39,7 @@ A_tot = A_1 + A_1 prime + ...
   - see peaks and nodes we would expect (all four feeds are larger than 1 m - the wavelength at .3 GHz)
 
 ![download](https://github.com/user-attachments/assets/2d239514-4067-4329-af7d-3f9ac5d315ed)
+-->
 
 - Meeting Notes
   - Renaming `Phase[theta]` to $\alpha$ and `Phase[phi]` to $\beta$
