@@ -6,6 +6,12 @@
   - [1]' and [17]' plot should be the mirror of [1] and [17]
   - distance between [1] and [17]: .375 m
   - distance between [1] and [1]': 1.125 m (greater than wavelength)
+ 
+- Current Results Plots
+
+![download](https://github.com/user-attachments/assets/0122d178-0300-4bdf-9429-0826e1831dc5)
+![download](https://github.com/user-attachments/assets/7e0b6022-3acb-472d-84df-1a761a662ddb)
+![download](https://github.com/user-attachments/assets/aab34f6f-3588-4bf3-b46b-17245e0e2783)
 
 ## Week of 1/7/2025
 
@@ -15,7 +21,7 @@
 
 ![image](https://github.com/user-attachments/assets/f3cd0187-a301-4e60-8c3b-2f7e15c05386)
 
-![Screenshot 2025-01-14 165507](https://github.com/user-attachments/assets/8575d0ee-fb79-4ca3-a68b-496884b8c878)
+![image](https://github.com/user-attachments/assets/84c048dd-adbc-4adc-aed0-cb26961b6e1a)
 
  <!--
 ![image](https://github.com/user-attachments/assets/2ae4df77-e025-4156-b61d-d4ff531faca9)
