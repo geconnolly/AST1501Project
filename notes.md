@@ -6,8 +6,15 @@
   - [1]' and [17]' plot should be the mirror of [1] and [17]
   - distance between [1] and [17]: .375 m
   - distance between [1] and [1]': 1.125 m (greater than wavelength)
- 
-- Current Results Plots
+  - instead of `np.pi-theta` use `-phi` (which is the same as `np.pi-theta` and `rot = (0,0,270)`)
+
+- New Plots
+
+![download](https://github.com/user-attachments/assets/5ed98000-8fd5-4d8f-a3df-a529fdb67e4a)
+![download](https://github.com/user-attachments/assets/88b5e4cc-cbc0-4b83-9105-c30c9cc86eed)
+![download](https://github.com/user-attachments/assets/3b095283-1083-4de9-800c-6394a67c89f3)
+
+- Current Results Plots (incorrect)
 
 ![download](https://github.com/user-attachments/assets/0122d178-0300-4bdf-9429-0826e1831dc5)
 ![download](https://github.com/user-attachments/assets/7e0b6022-3acb-472d-84df-1a761a662ddb)
