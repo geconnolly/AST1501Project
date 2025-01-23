@@ -1,5 +1,11 @@
 # Research and Meeting Notes
 
+## Week of 1/21/2025
+
+- Meeting Notes
+
+![20250121_105555](https://github.com/user-attachments/assets/dc611452-500c-467c-b485-bd5e37b86e93)
+
 ## Week of 1/14/2025
 
 - Flipping Feeds
