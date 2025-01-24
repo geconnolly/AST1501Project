@@ -2,6 +2,74 @@
 
 ## Week of 1/21/2025
 
+- Plotting Function (returns an `hpmap`)
+```
+import numpy as np
+import healpy as hp
+import pandas as pd
+
+def plot_two_feeds(filename1, filename2, flip = False):
+    '''
+    inputs:
+    ========
+    filename1, filename 2: recursive strings of imported files of individual feeds 
+    flip: set to False, True is used when plotting the flip of two feeds
+    
+    returns:
+    ========
+    rot_hpmap: hpmap of two feeds, to go into hp.mollview for a plot
+    '''
+    
+    # importing files 
+    
+    data1 = pd.read_fwf(filename1, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data1['theta'] = np.radians(data1['theta'])
+    data1['phi'] = np.radians(data1['phi'])
+    data1['alpha'] = np.radians(data1['alpha'])
+    data1['beta'] = np.radians(data1['beta'])
+
+    data2 = pd.read_fwf(filename2, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data2['theta'] = np.radians(data2['theta'])
+    data2['phi'] = np.radians(data2['phi'])
+    data2['alpha'] = np.radians(data2['alpha'])
+    data2['beta'] = np.radians(data2['beta'])
+    
+    # equations
+    
+    G_1 = 10**(data1['abs(theta)']/10)
+    A_1 = np.sqrt(G_1)*np.exp(1j*data1['alpha'])
+    
+    G_2 = 10**(data2['abs(theta)']/10)
+    A_2 = np.sqrt(G_2)*np.exp(1j*data2['alpha']) 
+    
+    A_tot = A_1 + A_2
+    D_tot = np.abs(A_tot)**2
+    
+    # plot
+    
+    nside=64
+    npix = hp.nside2npix(nside)
+    hpmap = np.zeros(npix)
+
+    if flip == False:
+        pidx = hp.ang2pix(nside, data1['theta'], data1['phi'])
+        
+    else: #flip == True
+        pidx = hp.ang2pix(nside, data1['theta'], -data1['phi'])
+        
+    hpmap[pidx]=(D_tot)
+
+    rot = hp.rotator.Rotator(rot=(0,0,90))
+    orig_hpmap = hpmap
+    rot_hpmap = rot.rotate_map_pixel(orig_hpmap)
+
+    return rot_hpmap
+```
+
 - Meeting Notes
 
 ![20250121_105555](https://github.com/user-attachments/assets/dc611452-500c-467c-b485-bd5e37b86e93)
