@@ -2,6 +2,12 @@
 
 ## Week of 1/21/2025
 
+- Correct(?) Plots
+
+![download](https://github.com/user-attachments/assets/5b48d1e7-aa64-4e04-9f5e-3e03c4d5ed63)
+![download](https://github.com/user-attachments/assets/2a2a0b2d-e842-40db-ad33-96472150b086)
+![download](https://github.com/user-attachments/assets/ab854861-eb2e-4e5f-bb88-04bc76ff38d7)
+
 - Plotting Function (returns an `hpmap`)
 ```
 import numpy as np
@@ -44,7 +50,7 @@ def plot_two_feeds(filename1, filename2, flip = False):
     A_1 = np.sqrt(G_1)*np.exp(1j*data1['alpha'])
     
     G_2 = 10**(data2['abs(theta)']/10)
-    A_2 = np.sqrt(G_2)*np.exp(1j*data2['alpha']) 
+    A_2 = np.sqrt(G_2)*np.exp(1j*(data2['alpha'] + 2*np.pi*.325*np.sin(data2['phi'])))
     
     A_tot = A_1 + A_2
     D_tot = np.abs(A_tot)**2
