@@ -2,17 +2,35 @@
 
 ## Week of 1/28/2025
 
+- [January Update Slides](https://github.com/user-attachments/files/18648211/January_Update.pdf)
+
+- Un-Rotated Plots
+
+![download](https://github.com/user-attachments/assets/aa7d790e-785e-4da8-8a99-f013ea218017)
+![download](https://github.com/user-attachments/assets/7b8c7356-6d30-4bc8-9b01-42428c93df6e)
+![download](https://github.com/user-attachments/assets/e5c87fce-b348-484c-ba2a-e28ccde7ff22)
+
+- Rotated Plots
+
+![download](https://github.com/user-attachments/assets/03432ddd-c72e-415a-b29a-c3b2bad23e27)
+![download](https://github.com/user-attachments/assets/e022519e-200f-4640-bd79-69f6d5eb17da)
+![download](https://github.com/user-attachments/assets/3e7a9982-532c-41e6-9ff4-8b06a891cad3)
+
 - Issues with Coordinate System (Again)
   - only use file coordinates (theta, phi) to set `pidx`, never reference after
   - use (long, lat) instead, references healpy coordinates (`long, lat = hp.pix2ang(nside, pidx)`)
+ 
+![image](https://github.com/user-attachments/assets/5163021d-9ed6-4d04-b27c-67af5ccc2f6e)
 
 ## Week of 1/21/2025
 
+<!--
 - Correct(?) Plots
 
 ![download](https://github.com/user-attachments/assets/5b48d1e7-aa64-4e04-9f5e-3e03c4d5ed63)
 ![download](https://github.com/user-attachments/assets/2a2a0b2d-e842-40db-ad33-96472150b086)
 ![download](https://github.com/user-attachments/assets/ab854861-eb2e-4e5f-bb88-04bc76ff38d7)
+-->
 
 - Plotting Function (returns an `hpmap`)
 ```
