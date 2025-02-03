@@ -1,5 +1,11 @@
 # Research and Meeting Notes
 
+## Week of 1/28/2025
+
+- Issues with Coordinate System (Again)
+  - only use file coordinates (theta, phi) to set `pidx`, never reference after
+  - use (long, lat) instead, references healpy coordinates (`long, lat = hp.pix2ang(nside, pidx)`)
+
 ## Week of 1/21/2025
 
 - Correct(?) Plots
