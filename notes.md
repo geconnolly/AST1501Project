@@ -1,16 +1,28 @@
 # Research and Meeting Notes
 
-## Week of 1/28/2025
+## Week of 1/28/2025 - 2/4/2025
 
 - [January Update Slides](https://github.com/user-attachments/files/18648211/January_Update.pdf)
 
-- Un-Rotated Plots
+- Un-Rotated Plots (w/o phase shift)
+
+![download](https://github.com/user-attachments/assets/4a56bc24-df7c-42ef-a3e7-92449c6cb74a)
+![download](https://github.com/user-attachments/assets/0e67373b-b048-4d57-945d-d09e47c7a606)
+![download](https://github.com/user-attachments/assets/f86d58bf-c185-49d1-9b26-e6fa2afce72a)
+
+- Rotated Plots (w/o phase shift)
+
+![download](https://github.com/user-attachments/assets/153c2868-34db-480e-9705-d3f1f9b901be)
+![download](https://github.com/user-attachments/assets/e9d5e7e7-cbcc-4df6-8cec-c2f280639176)
+![download](https://github.com/user-attachments/assets/ae34abff-bb3d-4feb-ba28-1baa223f494c)
+
+- Un-Rotated Plots (w/ phase shift)
 
 ![download](https://github.com/user-attachments/assets/aa7d790e-785e-4da8-8a99-f013ea218017)
 ![download](https://github.com/user-attachments/assets/7b8c7356-6d30-4bc8-9b01-42428c93df6e)
 ![download](https://github.com/user-attachments/assets/e5c87fce-b348-484c-ba2a-e28ccde7ff22)
 
-- Rotated Plots
+- Rotated Plots (w/ phase shift)
 
 ![download](https://github.com/user-attachments/assets/03432ddd-c72e-415a-b29a-c3b2bad23e27)
 ![download](https://github.com/user-attachments/assets/e022519e-200f-4640-bd79-69f6d5eb17da)
