@@ -16,6 +16,7 @@
 ![download](https://github.com/user-attachments/assets/e9d5e7e7-cbcc-4df6-8cec-c2f280639176)
 ![download](https://github.com/user-attachments/assets/ae34abff-bb3d-4feb-ba28-1baa223f494c)
 
+<!--
 - Un-Rotated Plots (w/ phase shift)
 
 ![download](https://github.com/user-attachments/assets/aa7d790e-785e-4da8-8a99-f013ea218017)
@@ -27,7 +28,7 @@
 ![download](https://github.com/user-attachments/assets/03432ddd-c72e-415a-b29a-c3b2bad23e27)
 ![download](https://github.com/user-attachments/assets/e022519e-200f-4640-bd79-69f6d5eb17da)
 ![download](https://github.com/user-attachments/assets/3e7a9982-532c-41e6-9ff4-8b06a891cad3)
-
+-->
 - Issues with Coordinate System (Again)
   - only use file coordinates (theta, phi) to set `pidx`, never reference after
   - use (long, lat) instead, references healpy coordinates (`long, lat = hp.pix2ang(nside, pidx)`)
