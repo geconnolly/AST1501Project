@@ -1,5 +1,12 @@
 # Research and Meeting Notes
 
+## Week of 2/11/2025
+
+![download](https://github.com/user-attachments/assets/4aab330b-bd52-453e-b9f3-d46a0d2be21f)
+![download](https://github.com/user-attachments/assets/2937ed00-f029-4045-8317-fe037c0944b4)
+![download](https://github.com/user-attachments/assets/afde2031-fd2c-4a43-a332-8a82e6aa0a1f)
+![download](https://github.com/user-attachments/assets/a11367d9-2cee-4310-a9e5-be77caa9539e)
+
 ## Week of 1/28/2025 - 2/4/2025
 
 - [January Update Slides](https://github.com/user-attachments/files/18648211/January_Update.pdf)
