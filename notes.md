@@ -2,6 +2,13 @@
 
 ## Week of 2/11/2025
 
+- Understanding `hp.rot` Plots
+  - Mollview maps for un-rotated and rotated combined feeds and plots of long and lat values
+  - Compare rotated and un-rotated values and found they are the same
+  - Mollview may be distorting maps visually, but not quantitatively
+  
+![Rotation_Plots](https://github.com/user-attachments/assets/a21a8573-21f2-43fa-a3ec-60083783b030)
+
 ![download](https://github.com/user-attachments/assets/4aab330b-bd52-453e-b9f3-d46a0d2be21f)
 ![download](https://github.com/user-attachments/assets/2937ed00-f029-4045-8317-fe037c0944b4)
 ![download](https://github.com/user-attachments/assets/afde2031-fd2c-4a43-a332-8a82e6aa0a1f)
