@@ -1,5 +1,70 @@
 # Research and Meeting Notes
 
+## Week of 2/18/2025
+
+- Adding Plots
+  - $\ D_{tot} = |A_1 + A_2 + A_1 ' + A_2 '|^2$
+  - However, the flip happens with the `hpmap`, not when solving the $A$ values
+ 
+```
+def plot_four_feeds(filename1, filename2):
+
+    # importing files 
+    
+    data1 = pd.read_fwf(filename1, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data1['theta'] = np.radians(data1['theta'])
+    data1['phi'] = np.radians(data1['phi'])
+    data1['alpha'] = np.radians(data1['alpha'])
+    data1['beta'] = np.radians(data1['beta'])
+
+    data2 = pd.read_fwf(filename2, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data2['theta'] = np.radians(data2['theta'])
+    data2['phi'] = np.radians(data2['phi'])
+    data2['alpha'] = np.radians(data2['alpha'])
+    data2['beta'] = np.radians(data2['beta'])
+    
+    # plot
+    
+    nside=64
+    npix = hp.nside2npix(nside)
+    hpmap = np.zeros(npix)
+    
+    hpmap_A_1 = np.zeros(npix, dtype=complex)
+    hpmap_A_2 = np.zeros(npix, dtype=complex)
+    hpmap_A_3 = np.zeros(npix, dtype=complex)
+    hpmap_A_4 = np.zeros(npix, dtype=complex)
+    
+    pidx = hp.ang2pix(nside, data1['theta'], data1['phi'])
+    
+    pidx_flip = hp.ang2pix(nside, data1['theta'], -data1['phi'])
+        
+    # equations
+        
+    G_1 = 10**(data1['abs(theta)']/10)
+    A_1 = np.sqrt(G_1)*np.exp(1j*(data1['alpha']))
+
+    G_2 = 10**(data2['abs(theta)']/10)
+    A_2 = np.sqrt(G_2)*np.exp(1j*(data2['alpha']))
+    
+    D_tot = np.abs(A_1+A_2)**2
+    
+    hpmap_A_1[pidx] = A_1
+    hpmap_A_2[pidx] = A_2
+    hpmap_A_3[pidx_flip] = A_2
+    hpmap_A_4[pidx_flip] = A_1
+    
+    return np.abs(hpmap_A_1 + hpmap_A_2 + hpmap_A_3 + hpmap_A_4)**2
+```
+
+- Plots
+
+![download](https://github.com/user-attachments/assets/5945540a-9ce4-4f23-a290-372caf485360)
+![download](https://github.com/user-attachments/assets/ef93f91c-dbd2-4f91-bbf2-d74480d9a743)
+
 ## Week of 2/11/2025
 
 - Understanding `hp.rot` Plots
