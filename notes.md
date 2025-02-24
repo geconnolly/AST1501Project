@@ -63,7 +63,18 @@ def plot_four_feeds(filename1, filename2):
 - Plots
 
 ![download](https://github.com/user-attachments/assets/5945540a-9ce4-4f23-a290-372caf485360)
-![download](https://github.com/user-attachments/assets/ef93f91c-dbd2-4f91-bbf2-d74480d9a743)
+<!---![download](https://github.com/user-attachments/assets/ef93f91c-dbd2-4f91-bbf2-d74480d9a743)--->
+
+- Comparing Different Antenna Combination Plots
+
+![download](https://github.com/user-attachments/assets/ad79e861-425c-4fcc-9654-0cf690b7aa5f)
+![download](https://github.com/user-attachments/assets/e1541779-96ad-476a-b032-b999dce9c262)
+![download](https://github.com/user-attachments/assets/c3dad89d-4315-49e8-ae30-af337bfd5878)
+![download](https://github.com/user-attachments/assets/3ce5bf33-e5f0-46d0-92b4-79ec79a4f63a)
+![download](https://github.com/user-attachments/assets/f957f06b-89b9-478e-b0c5-0f1fd47df9db)
+![download](https://github.com/user-attachments/assets/e361caa4-0956-4dee-8207-c079e3e251fa)
+![download](https://github.com/user-attachments/assets/c4ebb622-8882-4e32-ba5c-3d4b60d7dda7)
+![download](https://github.com/user-attachments/assets/5d50bde3-b2af-4c6f-8a90-991a5f887843)
 
 ## Week of 2/11/2025
 
