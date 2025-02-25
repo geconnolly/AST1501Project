@@ -1,5 +1,13 @@
 # Research and Meeting Notes
 
+## Week of 2/25/2025
+
+- Plots: Original, Rotated, Combined
+
+![download](https://github.com/user-attachments/assets/650ff9b6-ee2c-42fe-bd4a-b08af9391866)
+![download](https://github.com/user-attachments/assets/986829f4-31b7-47c0-9f34-8a3bf557441c)
+![download](https://github.com/user-attachments/assets/ede1834b-c34e-4fee-9dcd-7a82e2b8ce37)
+
 ## Week of 2/18/2025
 
 - Adding Plots
