@@ -8,6 +8,23 @@
 ![download](https://github.com/user-attachments/assets/986829f4-31b7-47c0-9f34-8a3bf557441c)
 ![download](https://github.com/user-attachments/assets/ede1834b-c34e-4fee-9dcd-7a82e2b8ce37)
 
+- Plot Naming Conventions
+  - Naming each stack of four feeds after the bottom-most feed in CST Model
+
+![image](https://github.com/user-attachments/assets/4d46e6e6-f37c-41d8-be16-72debbb4630c)
+
+- Plots: 22.5 rot, 45 rot
+
+![download](https://github.com/user-attachments/assets/5fc00d70-956e-4b99-9963-4ca7588354a7)
+![download](https://github.com/user-attachments/assets/8acd57b9-fae1-4ac7-b36b-78658b97c8e3)
+![download](https://github.com/user-attachments/assets/b357ed62-8f6f-4234-b7bf-5e130ebfecc0)
+
+- Power vs Degree Plots
+  - Drop off in Power for 7 Stacks and beyond
+
+![download](https://github.com/user-attachments/assets/050f5a76-d153-4907-9f3f-b9a68ee721a5)
+![download](https://github.com/user-attachments/assets/1091e8b0-d63f-4916-877e-2b2af041da2a)
+
 ## Week of 2/18/2025
 
 - Adding Plots
