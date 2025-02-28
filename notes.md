@@ -25,6 +25,93 @@
 ![download](https://github.com/user-attachments/assets/050f5a76-d153-4907-9f3f-b9a68ee721a5)
 ![download](https://github.com/user-attachments/assets/1091e8b0-d63f-4916-877e-2b2af041da2a)
 
+- Rotating Stacks Code
+```
+def plot_rotated_stacks(filename1, filename2, stacks):
+    '''
+    Parameters:
+    ==========
+    filename1, filename 2: strings
+        recursive strings of imported files of individual feeds 
+    stacks: int or list of ints
+        stack numbers 1 - 16 (# of bottom most feed of stack)
+    
+    Returns:
+    =======
+    map: array of floats
+        array of power values for selected stacks at HealPy pixel values
+    '''
+
+    # importing files 
+    
+    data1 = pd.read_fwf(filename1, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data1['theta'] = np.radians(data1['theta'])
+    data1['phi'] = np.radians(data1['phi'])
+    data1['alpha'] = np.radians(data1['alpha'])
+    data1['beta'] = np.radians(data1['beta'])
+
+    data2 = pd.read_fwf(filename2, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
+                                                  (135, 145)], 
+                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data2['theta'] = np.radians(data2['theta'])
+    data2['phi'] = np.radians(data2['phi'])
+    data2['alpha'] = np.radians(data2['alpha'])
+    data2['beta'] = np.radians(data2['beta'])
+    
+    # plot
+    
+    nside=64
+    npix = hp.nside2npix(nside)
+    hpmap = np.zeros(npix)
+    
+    hpmap_A_1 = np.zeros(npix, dtype=complex)
+    hpmap_A_2 = np.zeros(npix, dtype=complex)
+    hpmap_A_3 = np.zeros(npix, dtype=complex)
+    hpmap_A_4 = np.zeros(npix, dtype=complex)
+    
+    pidx = hp.ang2pix(nside, data1['theta'], data1['phi'])
+    
+    pidx_flip = hp.ang2pix(nside, data1['theta'], -data1['phi'])
+        
+    # equations
+        
+    G_1 = 10**(data1['abs(theta)']/10)
+    A_1 = np.sqrt(G_1)*np.exp(1j*(data1['alpha']))
+
+    G_2 = 10**(data2['abs(theta)']/10)
+    A_2 = np.sqrt(G_2)*np.exp(1j*(data2['alpha']))
+    
+    D_tot = np.abs(A_1+A_2)**2
+    
+    # flip
+    
+    hpmap_A_1[pidx] = A_1
+    hpmap_A_2[pidx] = A_2
+    hpmap_A_3[pidx_flip] = A_2
+    hpmap_A_4[pidx_flip] = A_1
+    
+    # rotation
+    
+    stack_rotations = np.arange(0, 360, 22.5)
+    
+    sum_A = 0
+    
+    for stack in stacks:
+        
+        rot = hp.rotator.Rotator(rot=(0, stack_rotations[stack-1], 90))
+        
+        rot_A_1 = rot.rotate_map_pixel(hpmap_A_1)
+        rot_A_2 = rot.rotate_map_pixel(hpmap_A_2)
+        rot_A_3 = rot.rotate_map_pixel(hpmap_A_3)
+        rot_A_4 = rot.rotate_map_pixel(hpmap_A_4)
+        
+        sum_A += rot_A_1 + rot_A_2 + rot_A_3 + rot_A_4
+    
+    return np.abs(sum_A)**2
+```
+
 ## Week of 2/18/2025
 
 - Adding Plots
