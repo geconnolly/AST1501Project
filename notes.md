@@ -13,11 +13,12 @@
 
 ![image](https://github.com/user-attachments/assets/4d46e6e6-f37c-41d8-be16-72debbb4630c)
 
-- Plots: 22.5 rot, 45 rot
+- Plots: Original, 22.5 rot, 45 rot, All Feeds Combined
 
 ![download](https://github.com/user-attachments/assets/5fc00d70-956e-4b99-9963-4ca7588354a7)
 ![download](https://github.com/user-attachments/assets/8acd57b9-fae1-4ac7-b36b-78658b97c8e3)
 ![download](https://github.com/user-attachments/assets/b357ed62-8f6f-4234-b7bf-5e130ebfecc0)
+![download](https://github.com/user-attachments/assets/e30bea32-140a-4ad1-8a03-5d4e5bbf7143)
 
 - Power vs Degree Plots
   - Drop off in Power for 7 Stacks and beyond
