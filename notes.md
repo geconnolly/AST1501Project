@@ -39,23 +39,23 @@ def plot_rotated_stacks(filename1, filename2, stacks):
     
     Returns:
     =======
-    map: array of floats
+    map: aray of floats
         array of power values for selected stacks at HealPy pixel values
     '''
 
     # importing files 
     
-    data1 = pd.read_fwf(filename1, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
-                                                  (135, 145)], 
-                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data1 = pd.read_fwf(filename1, skiprows=2, 
+                    colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135), (135, 145)], 
+                    names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
     data1['theta'] = np.radians(data1['theta'])
     data1['phi'] = np.radians(data1['phi'])
     data1['alpha'] = np.radians(data1['alpha'])
     data1['beta'] = np.radians(data1['beta'])
 
-    data2 = pd.read_fwf(filename2, skiprows=2, colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135),
-                                                  (135, 145)], 
-                      names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
+    data2 = pd.read_fwf(filename2, skiprows=2,
+                    colspecs=[(0, 10), (12, 22), (34, 46), (50, 66), (70, 86), (90, 110), (118, 135), (135, 145)], 
+                    names=['theta', 'phi', 'gain', 'abs(theta)', 'alpha', 'abs(phi)', 'beta', 'ratio'])
     data2['theta'] = np.radians(data2['theta'])
     data2['phi'] = np.radians(data2['phi'])
     data2['alpha'] = np.radians(data2['alpha'])
