@@ -1,5 +1,17 @@
 # Research and Meeting Notes
 
+## Week of 3/4/2025
+
+- Signal to Noise Ratio
+  - Scale Signal by inverse variance $1/\\sigma^2$
+  - Used `np.std` for $\\sigma$
+  - Shape does not change, but power increases dramatically
+
+![image](https://github.com/user-attachments/assets/3284c0e4-c9b5-4949-a2b4-184f65c2292b)
+![image](https://github.com/user-attachments/assets/6dbceef8-7803-480f-8713-257c3934ebf2)
+
+- Phase Shift
+
 ## Week of 2/25/2025
 
 - Plots: Original, Rotated, Combined
