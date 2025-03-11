@@ -1,5 +1,18 @@
 # Research and Meeting Notes
 
+## Week of 3/11/2025
+
+- Signal to Noise Ratio
+  - Need to weight everything by the variance
+  - $\frac{\sum_i y_i/\sigma_i^2}{\sum_i (1/\sigma^2)}$
+  - What, physically, is $\sigma^2$?
+ 
+- Phase Shifting
+  - `np.arctan2` gives phase from $-\pi$ to $\pi$
+  - Need to "wrap"?
+  - Need to get rid of the interference from phase
+  - $Stack Total = e^{i\phi_1}stack_1 + e^{i\phi_2}stack_2 + ...$
+
 ## Week of 3/4/2025
 
 - Signal to Noise Ratio
