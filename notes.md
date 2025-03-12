@@ -9,7 +9,8 @@
  
 - Phase Shifting
   - `np.arctan2` gives phase from $-\pi$ to $\pi$
-  - Need to "wrap"?
+    - given $arg(a + bi)$ then $\phi = arctan(\frac{b}{a})$
+  - Need to "unwrap"?
   - Need to get rid of the interference from phase
   - $Stack Total = e^{i\phi_1}stack_1 + e^{i\phi_2}stack_2 + ...$
 
