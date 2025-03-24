@@ -1,11 +1,23 @@
 # Research and Meeting Notes
 
+## Week of 3/18/2025
+
+[Final Report Draft](https://www.overleaf.com/read/krfcgrgzzqms#2f924e)
+
+- Weighted Sum
+  - Needed to divide the sum by the total number of stacks
+  - `return_value = np.abs(sum_A)**2/len(stacks)`
+ 
+- Variance on bore sight
+  - Weight the bigger values more - weighted to the pixel value at the center
+  - Goal is to maximize $\frac{D}{\sqrt{T_{sys}}}$
+
 ## Week of 3/11/2025
 
 - Signal to Noise Ratio
   - Need to weight everything by the variance
   - $\frac{\sum_i y_i/\sigma_i^2}{\sum_i (1/\sigma^2)}$
-  - What, physically, is $\sigma^2$?
+  - What, physically, is $\sigma^2$? D value on boresight?
  
 - Phase Shifting
   - `np.arctan2` gives phase from $-\pi$ to $\pi$
