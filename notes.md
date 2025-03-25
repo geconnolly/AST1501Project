@@ -1,5 +1,14 @@
 # Research and Meeting Notes
 
+## Week of 3/25/2025
+
+- Asymmetry
+  - Subtract mirror image - if symmetric, should see no difference
+  - Is CST symmetric? HealPix _should_ be
+ 
+- Normalize Beam
+  - Normalize by sum of D (max value 1)
+
 ## Week of 3/18/2025
 
 [Final Report Draft](https://www.overleaf.com/read/krfcgrgzzqms#2f924e)
