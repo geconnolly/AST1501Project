@@ -2,6 +2,14 @@
 
 ## Week of 3/25/2025
 
+- Map Popultation
+  - $A_1$ and $A_2$ are made from $\alpha$ from the CST data
+    - shape of 259920
+  - `pidx` is made from $\theta$ and $\phi$ values from CST data
+    - also shape of 259920
+  - `pidx` looks like: [0, 0, 4, 12, 12, ...]
+    - means that the value in the pixel is the last inputed value
+
 - Asymmetry
   - Subtract mirror image - if symmetric, should see no difference
   - Is CST symmetric? HealPix _should_ be
