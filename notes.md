@@ -1,5 +1,16 @@
 # Research and Meeting Notes
 
+## Week of 4/1/2025
+
+- Asymmetry/Map Popilation
+  - For each pixel, added amplitude values at given pixel, then divided by total number of amplitude values (bin value)
+  - Seems to have solved asymmetry issue, but multiple stacks (past 7) are still acting strange
+ 
+![image](https://github.com/user-attachments/assets/609b4159-7e40-4834-8361-8cd0dff6bbf6)
+
+- CHIME/CHORD RFI Working Group Meeting
+  - [Slides](https://docs.google.com/presentation/d/1T9Rd0A4GXHd8M42H4B1pBUGZf7E3zPQJkcgTgTHk4Nk/edit?usp=sharing)
+
 ## Week of 3/25/2025
 
 - Map Popultation
