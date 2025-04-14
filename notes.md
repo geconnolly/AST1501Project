@@ -1,10 +1,44 @@
 # Research and Meeting Notes
 
+## Week of 4/8/2025
+
+[Final Presentation](https://github.com/user-attachments/files/19742252/Final_Presentation.pdf)
+
+- Weighting
+  - Weighting by $D$ value at the center for individual feeds and stacks
+  - Value at the center for stacks 5 and 13 are 2-3 orders of magnitude smaller than every other value (~0.0002)
+    - Feeds that are facing the sides
+  - Stack 9 also has a low value (~0.02)
+    - Feeds that are facing the back
+   
+- Center of each stack (disregard scaling values - unweighted)
+![image](https://github.com/user-attachments/assets/c4e29c8b-6d27-404d-90c8-b6ff75840773)
+
+|Stack|Power @ Center|
+|-----|--------------|
+|1|1.6244255282867|
+|2|1.7510090560518297|
+|3|1.2117650527715131|
+|4|1.2867771018268348|
+|5|0.0002405889919858276|
+|6|1.1571023623380903|
+|7|0.44393454172140956|
+|8|0.2952031820062026|
+|9|0.022715434731680324|
+|10|0.2950526979019993|
+|11|0.4414369425565773|
+|12|1.1548902387809774|
+|13|0.00023947266405845128|
+|14|1.283919437290192|
+|15|1.2084406178216345|
+|16|1.7489155792290854|
+
 ## Week of 4/1/2025
 
 - Asymmetry/Map Popilation
   - For each pixel, added amplitude values at given pixel, then divided by total number of amplitude values (bin value)
   - Seems to have solved asymmetry issue, but multiple stacks (past 7) are still acting strange
+    - 9 Stacks includes the feeds pointing to the sides, the power doesn't increase but the total number of stacks (N) increases
  
 ![image](https://github.com/user-attachments/assets/609b4159-7e40-4834-8361-8cd0dff6bbf6)
 
@@ -30,7 +64,7 @@
 
 ## Week of 3/18/2025
 
-[Final Report Draft](https://www.overleaf.com/read/krfcgrgzzqms#2f924e)
+[Final Report](https://www.overleaf.com/read/krfcgrgzzqms#2f924e)
 
 - Weighted Sum
   - Needed to divide the sum by the total number of stacks
