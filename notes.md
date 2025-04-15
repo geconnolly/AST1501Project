@@ -11,8 +11,8 @@
   - Stack 9 also has a low value (~0.02)
     - Feeds that are facing the back
    
-- Center of each stack (disregard scaling values - unweighted)
-![image](https://github.com/user-attachments/assets/c4e29c8b-6d27-404d-90c8-b6ff75840773)
+- Center of each stack
+![image](https://github.com/user-attachments/assets/e2f5b83a-ba73-4601-bcc6-ad08e6a2fb7d)
 
 |Max Power|
 |---------|
