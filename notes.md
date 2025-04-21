@@ -1,5 +1,17 @@
 # Research and Meeting Notes
 
+## Week of 4/14/2025
+
+- Weighting
+  - Want to weight larger signals over smaller signals: $1/\sigma^2$ bigger for larger signals
+  - $N$ vs $N^2$
+    - noise: signal/feeds?
+    - signal goes up as $N^2$ _in power space_
+    - amplitude of noise signal: $\sqrt{N}$
+    - power of noise signal: N
+  - sum vs. weighted average
+    - weighted average of signal vs weighted average of noise
+
 ## Week of 4/8/2025
 
 [Final Presentation](https://github.com/user-attachments/files/19742252/Final_Presentation.pdf)
