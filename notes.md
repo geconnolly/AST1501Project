@@ -1,5 +1,11 @@
 # Research and Meeting Notes
 
+## Week of 4/22/2025
+
+- Weighting/SNR
+  - Noise (N): set to 1, can be changed
+  - Weight (w): had as $D$ at center, changing to $|A|$
+
 ## Week of 4/14/2025
 
 - Weighting
