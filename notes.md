@@ -5,6 +5,18 @@
 - Weighting/SNR
   - Noise (N): set to 1, can be changed
   - Weight (w): had as $D$ at center, changing to $|A|$
+  - Antenna is measuring some absolute flux, we want to try to measure it best
+    
+$\frac{|w_1A_1 + w_2A_2 + ... w_NA_N|^2}{w_1^2 +w_2^2 + ... + w_N^2}$
+  - where $w_N = |A_N|$ at the center
+
+Current Weighting Process
+
+1. Find amplitude for individual feeds, $A_N$
+2. Find magnitude of amplitude at the center for each individual feed, $w_N$
+3. Compute weighted average for amplitude of one stack (NOT D), $A_{tot, N} = \frac{\Sigma{w_N*A_N}}{\Sigma{w_N}}$
+4. Find magnitude of stack amplitude at the center using weighted amplitude from one stack, $w_{tot, N}$
+5. Compute weighted average for power (NOT A), $D_{tot} = \frac{|\Sigma{e^{i\phi}w_{tot, N}A_{tot, N}}|^2}{\Sigma{w_{tot, N}^2}}$
 
 ## Week of 4/14/2025
 
