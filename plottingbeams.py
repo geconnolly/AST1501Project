@@ -173,7 +173,7 @@ def plot_two_feeds(filename1, filename2, flip = False, nside_value=64):
 
     return rot_hpmap
 
-def plot_rotated_stacks(filename1, filename2, stacks, SNR=False, nside_value=64, noise=1):
+def plot_rotated_stacks(filename1, filename2, stacks, SNR=False, nside_value=64):
     '''
     Parameters:
     ==========
@@ -290,8 +290,6 @@ def plot_rotated_stacks(filename1, filename2, stacks, SNR=False, nside_value=64,
         weight_2 = (np.abs(rot_A_2))[center]
         weight_3 = (np.abs(rot_A_3))[center]
         weight_4 = (np.abs(rot_A_4))[center]
-            
-        print(weight_1, weight_2, weight_3, weight_4)
         
         if SNR == True:
             sub_tot = (rot_A_1*weight_1 + rot_A_2*weight_2 + rot_A_3*weight_3 + rot_A_4*weight_4)
@@ -318,8 +316,6 @@ def plot_rotated_stacks(filename1, filename2, stacks, SNR=False, nside_value=64,
             
             weight_stack = (np.abs(A_weighted_stack))[center]
 
-            print(weight_stack)
-
             sum_A += np.exp(-1j*phase)*(A_weighted_stack)*weight_stack
                 
             weighting_all_stacks += weight_stack**2
@@ -332,7 +328,7 @@ def plot_rotated_stacks(filename1, filename2, stacks, SNR=False, nside_value=64,
     
     if SNR == True:
         
-        return_value = (np.abs(sum_A))**2/weighting_all_stacks/len(stacks)
+        return_value = (np.abs(sum_A))**2/weighting_all_stacks
             
     else: # SNR == False
         return_value = (np.abs(sum_A))**2/len(stacks)
