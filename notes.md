@@ -18,6 +18,9 @@ Current Weighting Process
 4. Find magnitude of stack amplitude at the center using weighted amplitude from one stack, $w_{tot, N} = |A_{tot, N}|$
 5. Compute weighted average for power (NOT A), $D_{tot} = \frac{|\Sigma{e^{i\phi}w_{tot, N}A_{tot, N}}|^2}{\Sigma{w_{tot, N}^2}}$
 
+- Presented at CHORD general call
+  - [Slides](https://docs.google.com/presentation/d/1T9Rd0A4GXHd8M42H4B1pBUGZf7E3zPQJkcgTgTHk4Nk/edit?usp=sharing)
+
 ## Week of 4/14/2025
 
 - Weighting
@@ -93,8 +96,7 @@ Current Weighting Process
  
 ![image](https://github.com/user-attachments/assets/609b4159-7e40-4834-8361-8cd0dff6bbf6)
 
-- CHIME/CHORD RFI Working Group Meeting
-  - [Slides](https://docs.google.com/presentation/d/1T9Rd0A4GXHd8M42H4B1pBUGZf7E3zPQJkcgTgTHk4Nk/edit?usp=sharing)
+- Presented CHIME/CHORD RFI Working Group Meeting
 
 ## Week of 3/25/2025
 
