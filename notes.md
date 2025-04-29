@@ -31,7 +31,7 @@ Current Weighting Process
 ![download](https://github.com/user-attachments/assets/4b8a954f-9454-4c17-8bfe-e4d35a81beb1)
 
 - Presented at CHORD general call
-  - [Slides](https://docs.google.com/presentation/d/1T9Rd0A4GXHd8M42H4B1pBUGZf7E3zPQJkcgTgTHk4Nk/edit?usp=sharing)
+  - [Slides](https://github.com/user-attachments/files/19961524/RFI.CHORD.General.4_25.pdf)
 
 ## Week of 4/14/2025
 
@@ -129,7 +129,8 @@ Current Weighting Process
 
 ## Week of 3/18/2025
 
-[Final Report](https://www.overleaf.com/read/krfcgrgzzqms#2f924e)
+[Final Report](https://github.com/user-attachments/files/19961514/Connolly_AST1501_Final_Report.pdf)
+
 
 - Weighted Sum
   - Needed to divide the sum by the total number of stacks
