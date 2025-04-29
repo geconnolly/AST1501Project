@@ -1,5 +1,12 @@
 # Research and Meeting Notes
 
+## Week of 4/29/2025
+
+- Weighting
+  - Something is still going wrong with weighting
+  - Weighted beam is ~15x less sensitive than unweighted beam
+  - Normalization issue?
+
 ## Week of 4/22/2025
 
 - Weighting/SNR
@@ -12,10 +19,10 @@ $\frac{|w_1A_1 + w_2A_2 + ... w_NA_N|^2}{w_1^2 +w_2^2 + ... + w_N^2}$
 
 Current Weighting Process
 
-1. Find amplitude for individual feeds, $A_N$
-2. Find magnitude of amplitude at the center for each individual feed, $w_N = |A_N|$
-3. Compute weighted average for amplitude of one stack (NOT D), $A_{tot, N} = \frac{\Sigma{w_N*A_N}}{\Sigma{w_N}}$
-4. Find magnitude of stack amplitude at the center using weighted amplitude from one stack, $w_{tot, N} = |A_{tot, N}|$
+1. Find amplitude for individual feeds, $A_n$, where $n$ is the number of feeds (1-4)
+2. Find magnitude of amplitude at the center for each individual feed, $w_n = |A_n|$
+3. Compute weighted average for amplitude of one stack (NOT D), $A_{tot, N} = \frac{\Sigma{w_n*A_n}}{\Sigma{w_n}}$
+4. Find magnitude of stack amplitude at the center using weighted amplitude from one stack, $w_{tot, N} = |A_{tot, N}|$ where $N$ is the number of stacks (1-16)
 5. Compute weighted average for power (NOT A), $D_{tot} = \frac{|\Sigma{e^{i\phi}w_{tot, N}A_{tot, N}}|^2}{\Sigma{w_{tot, N}^2}}$
 
 ![download](https://github.com/user-attachments/assets/388694f3-e4a3-4073-bc81-d111d9dfed2a)
