@@ -1,3 +1,7 @@
+import numpy as np
+import healpy as hp
+import pandas as pd
+
 def plot_one_feed(filename1, filename2, flip = False, nside_value=64):
     '''
     Parameters:
